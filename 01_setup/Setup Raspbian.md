@@ -36,9 +36,17 @@ Now, enable VNC Server by doing the following:
   \- Scroll down and select VNC > Yes.
 
 
-
-
 # Timezone
+```bash
+sudo raspi-config
+```
+
+# mount Windows shared folder
+```bash
+sodo mount -t cifs -o iocharset=utf8 //<IP>/raspberrypi  /home/pi/shared
+```
+
+# root password
+There is no root password set by default on Debian. You are expected to do everything through sudo. You can set one with "sudo passwd root" - just make sure you know what you are doing with a root account.
 
 
-# 
